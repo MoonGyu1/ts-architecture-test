@@ -2,11 +2,11 @@
   "name": "teamble-server-ts",
   "version": "1.0.0",
   "description": "teamble server version2",
-  "main": "app.js",
+  "main": "index.js",
   "author": "teamble-server",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --watch -- ./src/app.ts",
+    "dev": "ts-node-dev --inspect --watch -- ./src/index.ts",
     "build": "tsc --build --clean && tsc --build",
     "start": "node ./dist/index.js"
   },
@@ -16,5 +16,9 @@
     "express": "^4.17.3",
     "ts-node-dev": "^1.1.8",
     "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0"
   }
 }
